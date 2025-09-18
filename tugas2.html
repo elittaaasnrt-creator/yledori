@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2 HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3e8ff; /* ungu pastel muda */
+            padding: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        fieldset {
+            border: 2px solid #a78bfa; /* ungu pastel medium */
+            border-radius: 12px;
+            padding: 15px;
+            background-color: #ede9fe; /* ungu pastel lebih lembut */
+            box-shadow: 0 4px 8px rgba(167, 139, 250, 0.3);
+        }
+        legend {
+            font-weight: bold;
+            color: #7c3aed; /* ungu lebih gelap */
+        }
+        label {
+            display: inline-block;
+            margin-top: 5px;
+            color: #4b4453;
+        }
+        input, textarea, select, button {
+            margin-top: 5px;
+            padding: 8px;
+            border: 1px solid #c4b5fd;
+            border-radius: 6px;
+            outline: none;
+            background-color: #faf5ff; /* pastel ungu sangat muda */
+        }
+        input:focus, textarea:focus, select:focus {
+            border-color: #7c3aed;
+            box-shadow: 0 0 5px #c4b5fd;
+        }
+        .btn {
+            background-color: #a78bfa;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: #7c3aed;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Akun</legend>
+            <label for="username">Username:</label><br>
+            <input type="text" name="username" id="username"><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+
+            <label for="konfirmasi">Konfirmasi Password:</label><br>
+            <input type="password" id="konfirmasi" name="konfirmasi"><br><br>
+
+            <input type="submit" value="Daftar" class="btn">
+            <button type="reset" class="btn">Reset</button>
+        </fieldset>
+    </form>
+
+    <form action="#">
+        <fieldset>
+            <legend>Data Diri</legend>
+            <label for="nama">Nama Lengkap:</label><br>
+            <input type="text" id="nama" name="nama"><br><br>
+
+            <label>Jenis Kelamin:</label><br>
+            <input type="radio" id="laki" name="jk" value="Laki-laki">
+            <label for="laki">Laki-laki</label><br>
+            <input type="radio" id="perempuan" name="jk" value="Perempuan">
+            <label for="perempuan">Perempuan</label><br><br>
+
+            <label>Informasi yang Disukai:</label><br>
+            <input type="checkbox" id="olahraga" name="iyd" value="Olahraga">
+            <label for="olahraga">Olahraga</label><br>
+            <input type="checkbox" id="traveling" name="iyd" value="Traveling">
+            <label for="traveling">Traveling</label><br>
+            <input type="checkbox" id="kesehatan" name="iyd" value="Kesehatan">
+            <label for="kesehatan">Kesehatan</label><br><br>
+
+            <label for="komentar">Komentar:</label><br>
+            <textarea id="komentar" name="komentar" rows="4" cols="30"></textarea><br><br>
+
+            <label for="kota">Pilih Kota:</label><br>
+            <select id="kota" name="kota">
+                <option value="Medan">Medan</option>
+                <option value="Jakarta">Jakarta</option>
+                <option value="Bandung">Bandung</option>
+                <option value="Surabaya">Surabaya</option>
+            </select><br><br>
+
+            <input type="submit" value="Kirim" class="btn">
+        </fieldset>
+    </form>
+</body>
+</html>
